@@ -1,0 +1,141 @@
+.page-header__navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+
+  & .dropdown.show {
+    background-color: $color-dark;
+    border-bottom: 1px solid $color-light;
+
+    .nav-link,
+    .dropdown-item {
+      color: $color-light;
+      border-left: 1px solid $color-dark;
+    }
+
+    .dropdown-item:hover {
+      color: $color-dark;
+      background-color: $color-light;
+    }
+  }
+}
+
+.dropdown-menu {
+  background-color: $color-dark;
+  border: none;
+  border-radius: 0;
+}
+
+.container {
+  padding: 1px 8px 1px 8px;
+}
+
+.navbar {
+  padding: 25px 5px;
+
+  &-nav {
+    margin: 0;
+
+    & > .nav-item {
+      //&:last-child {
+      //  border-right: 1px solid $color-dark;
+      //}
+
+      & > .nav-link {
+        font-size: 1.2rem;
+        color: $color-dark;
+      }
+    }
+  }
+}
+
+.page-header__navbar-search {
+  flex-wrap: nowrap;
+  height: 50px;
+  margin-left: 33px;
+  border: 1px solid $color-dark;
+
+  & > input {
+    font-size: 1.2rem;
+  }
+}
+
+.btn {
+  padding: 6px 10px 6px 10px;
+}
+
+.page-header__cart {
+  &-btn {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    color: $color-dark;
+    border: none;
+    border-radius: 0;
+    background-color: $color-light;
+  }
+
+  &-counter {
+    display: none;
+  }
+}
+
+.fa-shopping-cart {
+  font-size: 1.5rem;
+}
+
+.form-control {
+  height: calc(1.5em + 0.75rem + 2px);
+  width: 10rem !important;
+  background: none;
+  border: none;
+
+  &:focus {
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-link {
+    margin-left: 19px;
+    margin-right: 18px;
+  }
+
+  .navbar-nav {
+    padding-left: 70px;
+
+    & > .nav-item {
+      &:not(.show) {
+        border-left: 1px solid $color-dark;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    min-height: auto;
+  }
+
+  .navbar-nav > .nav-item:last-child {
+    border-right: 1px solid $color-dark;
+  }
+}
+
+@media (max-width: 991.9px) {
+  .page-header__navbar-search {
+    display: inline-flex;
+    width: calc(100% - 100px);
+    margin-left: 0;
+
+    & > input {
+      flex-grow: 2
+    }
+  }
+
+  .page-header__cart-btn {
+    margin-top: -11px !important;
+  }
+}

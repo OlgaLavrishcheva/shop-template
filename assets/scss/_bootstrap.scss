@@ -1,0 +1,13 @@
+.btn-outline-success {
+  margin: 0 5px 0 5px;
+  border-radius: 0;
+  color: $color-light;
+  background-color: $color-dark;
+  border-color: $color-dark;
+
+  &:hover {
+    color: $color-dark;
+    background-color: $color-light;
+    border-color: $color-dark;
+  }
+}
