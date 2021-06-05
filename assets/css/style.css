@@ -99,6 +99,13 @@
           box-shadow: none;
 }
 
+.page-header__carousel {
+  margin-right: 0;
+  margin-left: 0;
+  border-bottom: 1px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 body {
   font-size: 1rem;
   font-weight: 400;

@@ -24,8 +24,6 @@
   border-radius: 0;
 }
 
-
-
 .navbar {
   padding: 25px 5px;
 
@@ -110,6 +108,7 @@
 
   .navbar-nav {
     padding-left: 70px;
+
     & > .nav-item {
       &:not(.show) {
         border-left: 1px solid $color-dark;
@@ -136,4 +135,11 @@
   .page-header__cart-btn {
     margin-top: -11px !important;
   }
+}
+
+.page-header__carousel {
+  margin-right: 0;
+  margin-left: 0;
+  border-bottom: 1px solid $color-light;
+  background-color: rgba(0, 0, 0, 0.3);
 }
