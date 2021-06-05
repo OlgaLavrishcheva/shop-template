@@ -4,3 +4,6 @@ temp/
 # IntellijIdea files
 .idea/
 */scss-comb/
+
+#ignore logs folder
+node_modules/
