@@ -1,9 +1,70 @@
-body {
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: left;
-  line-height: 1.5;
-  background-image: url("../img/patt.png");
-  background-position: 50% 0;
-  overflow-y: scroll;
+.sidebar {
+  color: $color-light;
+
+  .container-fluid {
+    padding: 15px 30px 30px 30px;
+  }
+
+  &-filter {
+    legend {
+      font-weight: bold;
+      //margin-bottom: 10px;
+    }
+
+    .form-check {
+      margin: 10px 0;
+
+      &-input {
+        width: 0;
+        height: 0;
+        margin-top: 4px;
+
+        &::before {
+          display: block;
+          width: 0.8rem;
+          height: 0.8rem;
+          margin-top: 6px;
+          content: "";
+          border: 1px solid #ffffff;
+        }
+
+        &:checked::before {
+          background-color: $color-light;
+        }
+      }
+    }
+
+
+    &__submit {
+      border-radius: unset;
+
+      &.btn-primary {
+        background-color: $color-dark;
+        border: 1px solid $color-light;
+        &:hover {
+          border-color: #0062cc;
+          background-color: #0069d9;
+        }
+      }
+    }
+
+    .form-check-label {
+      margin-left: 0.5rem;
+      font-size: 1.25rem;
+    }
+
+    &__more {
+      display: block;
+      color: $color-light;
+      margin-bottom: 30px;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar-filter {
+    border-right: 1px solid $color-light;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
 }
