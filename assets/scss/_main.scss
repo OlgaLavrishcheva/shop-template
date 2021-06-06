@@ -1,0 +1,19 @@
+.breadcrumb {
+  padding: 1rem 0 0 0;
+  opacity: 0.5;
+  background-color: transparent;
+  font-size: 14px;
+
+  & > .active {
+    color: $color-light;
+  }
+
+  & a {
+    color: $color-light;
+  }
+
+  &-item + .breadcrumb-item::before {
+    content: ">";
+    color: $color-light;
+  }
+}

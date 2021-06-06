@@ -106,6 +106,26 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.breadcrumb {
+  padding: 1rem 0 0 0;
+  opacity: 0.5;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.breadcrumb > .active {
+  color: #ffffff;
+}
+
+.breadcrumb a {
+  color: #ffffff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: #ffffff;
+}
+
 body {
   font-size: 1rem;
   font-weight: 400;
