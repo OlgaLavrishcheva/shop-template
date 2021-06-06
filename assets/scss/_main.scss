@@ -156,6 +156,17 @@
   }
 }
 
+.main-pagination__more {
+  //display: flex;
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  height: 80px;
+
+  a {
+    color: $color-light;
+  }
+}
 
 @media (min-width: 1200px) {
   .item-actions button {
