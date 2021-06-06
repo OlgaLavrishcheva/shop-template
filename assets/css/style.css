@@ -283,7 +283,30 @@ body {
   line-height: 1.5;
   background-image: url("../img/patt.png");
   background-position: 50% 0;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+.page-footer {
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.page-footer__fifth {
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 1.25rem;
+}
+
+.page-footer__fifth a {
+  color: #2c71b6;
+  text-decoration: none;
+}
+
+.page-footer__fifth a:hover {
+  color: #2c71b6;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 @media (min-width: 992px) {

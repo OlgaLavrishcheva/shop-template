@@ -1,0 +1,22 @@
+.page-footer {
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.page-footer__fifth {
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  //color: $color-dark;
+  font-size: 1.25rem;
+
+  a {
+    color: $color-dark;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-dark;
+      text-decoration-line: underline;
+    }
+  }
+}
