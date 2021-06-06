@@ -178,3 +178,9 @@
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 992px){
+  .main-pagination__more {
+    border-bottom: 1px solid $color-light;
+  }
+}
