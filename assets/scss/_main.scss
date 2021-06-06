@@ -34,3 +34,137 @@
     color: $color-light;
   }
 }
+
+.main-content {
+  margin-top: 30px;
+  color: $color-light;
+
+  .content-item {
+    padding-bottom: 30px;
+  }
+
+  .item {
+
+    &-image {
+      display: flex;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      background-color: $color-light;
+      opacity: 70%;
+      height: 180px;
+    }
+
+    &-wrapper {
+      border: 1px solid $color-light;
+    }
+
+    &-title {
+      padding-top: 0.75rem;
+      font-size: 1.75rem;
+    }
+
+    &-description {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+
+    &-characteristics {
+      margin-top: 15px;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+
+      span {
+        display: block;
+        margin-top: 7px;
+        margin-bottom: 7px;
+      }
+    }
+
+    &-buttons {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+
+      button {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+
+        &:last-child {
+          margin-top: 5px !important;
+        }
+      }
+
+      .btn-outline-success {
+        border: 1px solid $color-dark;
+        color: $color-dark;
+        background-color: transparent;
+
+        &:hover {
+          background-color: $color-dark;
+          color: $color-light;
+        }
+      }
+    }
+
+    &-price {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &-actions {
+      padding: 15px;
+
+      &__cart {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .btn-outline-success {
+        margin: 0;
+      }
+
+      button {
+        padding: 8px 5px 10px;
+        text-transform: uppercase;
+        border-color: $color-light;
+        border-radius: 0;
+        font-weight: bold;
+
+        &:first-child {
+          margin-bottom: 30px !important;
+        }
+
+        &:last-child {
+          margin-bottom: 15px !important;
+        }
+
+        &:hover {
+          color: $color-dark;
+          border-color: $color-light;
+          background-color: rgba(255, 255, 255, 0.75);
+        }
+
+        i {
+          margin-left: 5px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .item-actions button {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .item-actions button {
+    font-size: 0.9rem;
+  }
+}

@@ -141,6 +141,130 @@
   color: #ffffff;
 }
 
+.main-content {
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.main-content .content-item {
+  padding-bottom: 30px;
+}
+
+.main-content .item-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffffff;
+  opacity: 70%;
+  height: 180px;
+}
+
+.main-content .item-wrapper {
+  border: 1px solid #ffffff;
+}
+
+.main-content .item-title {
+  padding-top: 0.75rem;
+  font-size: 1.75rem;
+}
+
+.main-content .item-description {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.main-content .item-characteristics {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.main-content .item-characteristics span {
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.main-content .item-buttons {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+.main-content .item-buttons button {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.main-content .item-buttons button:last-child {
+  margin-top: 5px !important;
+}
+
+.main-content .item-buttons .btn-outline-success {
+  border: 1px solid #2c71b6;
+  color: #2c71b6;
+  background-color: transparent;
+}
+
+.main-content .item-buttons .btn-outline-success:hover {
+  background-color: #2c71b6;
+  color: #ffffff;
+}
+
+.main-content .item-price {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main-content .item-actions {
+  padding: 15px;
+}
+
+.main-content .item-actions__cart {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-content .item-actions .btn-outline-success {
+  margin: 0;
+}
+
+.main-content .item-actions button {
+  padding: 8px 5px 10px;
+  text-transform: uppercase;
+  border-color: #ffffff;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.main-content .item-actions button:first-child {
+  margin-bottom: 30px !important;
+}
+
+.main-content .item-actions button:last-child {
+  margin-bottom: 15px !important;
+}
+
+.main-content .item-actions button:hover {
+  color: #2c71b6;
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.main-content .item-actions button i {
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
 body {
   font-size: 1rem;
   font-weight: 400;
@@ -173,6 +297,15 @@ body {
   .nav-link {
     margin-left: 19px;
     margin-right: 18px;
+  }
+  .item-actions button {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .item-actions button {
+    font-size: 0.9rem;
   }
 }
 
