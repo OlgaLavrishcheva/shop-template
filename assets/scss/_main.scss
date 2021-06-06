@@ -17,3 +17,20 @@
     color: $color-light;
   }
 }
+
+.main-title {
+  &__header {
+    color: $color-light;
+    font-size: 2.85rem;
+  }
+
+  &__filter {
+    width: 100%;
+    margin-top: 6px;
+    padding: 3px 10px 5px;
+    font-size: 1.25rem;
+    border: 1px solid $color-light;
+    background-color: $color-dark;
+    color: $color-light;
+  }
+}
