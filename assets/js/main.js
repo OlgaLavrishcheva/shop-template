@@ -14,7 +14,7 @@ const buttonsContainer = document.querySelector('#content-container');
 const btnClickHandler = (e) => {
     const target = e.target;
 
-    if (target && target.classList.contains('item-actions__cart')) console.log('clicked');
+    if (target && target.matches('button.item-actions__cart')) console.log('clicked');
 };
 
 buttonsContainer.addEventListener('click', btnClickHandler);
