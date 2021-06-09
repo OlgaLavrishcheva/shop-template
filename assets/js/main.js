@@ -19,6 +19,14 @@ const btnClickHandler = (e) => {
         cartCounterLabel.innerHTML = `${++cartCounter}`;
         if (cartCounter === 1)
         cartCounterLabel.style.display = 'block';
+
+        buttonsContainer.removeEventListener('click', btnClickHandler);
+        target.disabled = true;
+
+        setTimeout (() => {
+            target.disabled = false;
+            buttonsContainer.addEventListener('click', btnClickHandler);
+            }, 2000);
     }
 };
 
