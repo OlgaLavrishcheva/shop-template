@@ -17,8 +17,18 @@ const btnClickHandler = (e) => {
 
     if (target && target.matches('.item-actions__cart')) {
         cartCounterLabel.innerHTML = `${++cartCounter}`;
-        if (cartCounter === 1)
-        cartCounterLabel.style.display = 'block';
+
+        if (cartCounter === 1) cartCounterLabel.style.display = 'block';
+
+        const mockData = +target
+            .parentElement
+            .previousElementSibling
+            .innerHTML
+            .replace('$','')
+            .replace(' <sup>','.')
+            .replace('</sup>','');
+
+        console.log('mockData', mockData);
 
         buttonsContainer.removeEventListener('click', btnClickHandler);
         target.disabled = true;
