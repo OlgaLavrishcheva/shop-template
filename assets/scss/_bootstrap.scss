@@ -10,4 +10,9 @@
     background-color: $color-light;
     border-color: $color-dark;
   }
+
+  &.focus,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($color-light, .5);
+  }
 }

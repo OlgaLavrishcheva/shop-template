@@ -12,6 +12,11 @@
   border-color: #2c71b6;
 }
 
+.btn-outline-success.focus, .btn-outline-success:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
 .page-header__navbar {
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -258,6 +263,13 @@ body {
 
 .main-content .item-actions__cart {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-content .item-actions__cart.disabled, .main-content .item-actions__cart:disabled, .main-content .item-actions__cart.active, .main-content .item-actions__cart:active {
+  opacity: 1;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .main-content .item-actions .btn-outline-success {

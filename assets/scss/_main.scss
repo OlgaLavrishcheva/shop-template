@@ -120,6 +120,16 @@
 
       &__cart {
         background-color: rgba(255, 255, 255, 0.2);
+
+        &.disabled,
+        &:disabled,
+        &.active,
+        &:active {
+          opacity: 1;
+          color: #ffffff !important;
+          border-color: #ffffff !important;
+          background-color: rgba(255, 255, 255, 0.1) !important;
+        }
       }
 
       .btn-outline-success {
