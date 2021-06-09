@@ -9,11 +9,17 @@
 //    учесть ошибку JS при рабте с дробной частью
 
 const buttonsContainer = document.querySelector('#content-container');
+const cartCounterLabel = document.querySelector('#cart-counter');
+let cartCounter = 0;
 
 const btnClickHandler = (e) => {
     const target = e.target;
 
-    if (target && target.matches('.item-actions__cart')) console.log('clicked');
+    if (target && target.matches('.item-actions__cart')) {
+        cartCounterLabel.innerHTML = `${++cartCounter}`;
+        if (cartCounter === 1)
+        cartCounterLabel.style.display = 'block';
+    }
 };
 
 buttonsContainer.addEventListener('click', btnClickHandler);
