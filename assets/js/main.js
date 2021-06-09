@@ -6,11 +6,13 @@
 // 5. Цену выведем в кнопку вместо основкного текста на время блокировки,
 //    затем восстановим исходное сообщение
 // 6. Реализуем счет всех товаров, добавленных в корзину,
-//    учесть ошибку JS при рабте с дробной частью
+//    учесть ошибку JS при работе с дробной частью
 
 const buttonsContainer = document.querySelector('#content-container');
 const cartCounterLabel = document.querySelector('#cart-counter');
+
 let cartCounter = 0;
+let cartPrice = 0;
 
 const btnClickHandler = (e) => {
     const target = e.target;
@@ -28,7 +30,11 @@ const btnClickHandler = (e) => {
             .replace(' <sup>','.')
             .replace('</sup>','');
 
-        console.log('mockData', mockData);
+        const restoreHTML = target.innerHTML;
+
+        cartPrice = Math.round((cartPrice + mockData)*100)/100;
+        console.log(cartPrice);
+        target.innerHTML = `Added $${cartPrice.toFixed(2)}`;
 
         buttonsContainer.removeEventListener('click', btnClickHandler);
         target.disabled = true;
@@ -36,7 +42,8 @@ const btnClickHandler = (e) => {
         setTimeout (() => {
             target.disabled = false;
             buttonsContainer.addEventListener('click', btnClickHandler);
-            }, 2000);
+            target.innerHTML = restoreHTML;
+        }, 2000);
     }
 };
 
